@@ -1,1 +1,11 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar .nav-container nav {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
