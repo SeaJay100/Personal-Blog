@@ -21,15 +21,25 @@ body, html {
                 text-decoration: none;
                 color: black;
             }
-            
+
         }
 
         nav {
-            display: none;
+            //display: none;
+            ul {
+                text-align: center;
+                list-style-type: none;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    display: block;
+                    text-align: center;
+                }
+            }   
         }
         .mobile-menu {
             margin: .5em 0 0 auto;
-            :hover {
+            &:hover {
                 cursor: pointer;
             }
         }
@@ -307,4 +317,79 @@ footer {
         font-weight: bold;
     }
 
+}
+
+
+nav.open-menu {
+    display: block;
+}
+
+nav {
+    display: none; 
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    margin: 0;
+    left: 0;
+    top: 0;
+    
+   
+    .collapse-menu {
+        position: absolute;
+        top: 2em;
+        right: 2em;
+        width: 25px;
+        cursor: pointer;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .primary-nav {
+        margin: 6em auto 0;
+        width: 100%; 
+        border-left: 1px solid black; 
+        border-right: 1px solid black;
+        
+        li {
+            border-bottom: 1px solid black;
+            
+            &:last-child {
+                border-bottom: none;
+            }
+
+            a {
+                display: block;
+                padding: 1.5em;
+                margin: 0;
+                text-decoration: none;
+                color: black;
+                
+               
+                &.active {
+                    text-decoration: underline;
+                    text-underline-offset: 4px;
+                    color: rgba(26, 134, 77, 1);
+                }
+            }
+        }
+    }
+
+   
+    .secondary-nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 3em;
+
+        li a img {
+            width: 20px;
+        }
+    }
 }

@@ -21,13 +21,20 @@ body, html {
   text-decoration: none;
   color: black;
 }
-.navbar .nav-container nav {
-  display: none;
+.navbar .nav-container nav ul {
+  text-align: center;
+  list-style-type: none;
+}
+.navbar .nav-container nav ul a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  text-align: center;
 }
 .navbar .nav-container .mobile-menu {
   margin: 0.5em 0 0 auto;
 }
-.navbar .nav-container .mobile-menu :hover {
+.navbar .nav-container .mobile-menu:hover {
   cursor: pointer;
 }
 
@@ -266,4 +273,66 @@ footer .priv-container {
 footer .logo {
   font-size: 3em;
   font-weight: bold;
+}
+
+nav.open-menu {
+  display: block;
+}
+
+nav {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+nav .collapse-menu {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  width: 25px;
+  cursor: pointer;
+}
+nav ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav .primary-nav {
+  margin: 6em auto 0;
+  width: 100%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+nav .primary-nav li {
+  border-bottom: 1px solid black;
+}
+nav .primary-nav li:last-child {
+  border-bottom: none;
+}
+nav .primary-nav li a {
+  display: block;
+  padding: 1.5em;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+nav .primary-nav li a.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: rgb(26, 134, 77);
+}
+nav .secondary-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 3em;
+}
+nav .secondary-nav li a img {
+  width: 20px;
 }/*# sourceMappingURL=main.css.map */

@@ -11,21 +11,22 @@
         <div class="nav-container">
             <span class="logo"><a href="#">Me.Blog</a></span>
             <nav>
+                <img id="collapse-menu" class="collapse-menu" src="img/x-symbol-svgrepo-com.svg" alt="close-menu">
                 <ul class="primary-nav">
-                    <span><li><a href="#">Home</a></li></span>
-                    <span><li><a href="">About</a></li></span>
-                    <span><li><a href="">My Blog</a></li></span>
-                    <span><li><a href="">Contact</a></li></span>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">My Blog</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
                 
                 <ul class="secondary-nav">
-                    <span><li><a href=""><img src="img/facebook-logo.svg" alt=""></a></li></span>
-                    <span><li><a href=""><img src="img/instagram-logo.svg" alt=""></a></li></span>
-                    <span><li><a href=""><img src="img/twitter-logo.svg" alt=""></a></li></span>
-                    <span><li><a href=""><img src="img/pinterest-logo.svg" alt=""></a></li></span>
+                    <li><a href=""><img src="img/facebook-logo.svg" alt=""></a></li>
+                    <li><a href=""><img src="img/instagram-logo.svg" alt=""></a></li>
+                    <li><a href=""><img src="img/twitter-logo.svg" alt=""></a></li>
+                    <li><a href=""><img src="img/pinterest-logo.svg" alt=""></a></li>
                 </ul>
             </nav>
-            <span class="mobile-menu"><img src="img/menu.svg" alt="exit"></span>
+            <img id="mobile-menu" class="mobile-menu" src="img/menu.svg" alt="open-menu">
         </div>
     </div>
 
@@ -158,4 +159,19 @@
         <p>Powered and secured by <a href="https://vercel.com/seajay100s-projects">Vercel</a></p>
     </footer>
 </body>
+<script>
+    const mobileBtn = document.getElementById('mobile-menu');
+    const nav = document.querySelector('nav');
+    const mobileBtnExit = document.getElementById('collapse-menu');
+
+    // Opens the menu
+    mobileBtn.addEventListener('click', () => {
+        nav.classList.add('open-menu'); 
+    });
+
+    // Closes the menu
+    mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('open-menu');
+    });
+</script>
 </html>
