@@ -1,11 +1,269 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+body, html {
   margin: 0;
+  font-family: Poppins, sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
+.navbar {
+  border-bottom: 1px solid black;
+}
+.navbar .nav-container {
+  display: flex;
+  margin: 0.5em 1.5em 0.5em 1.5em;
+}
+.navbar .nav-container .logo a {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
 .navbar .nav-container nav {
   display: none;
+}
+.navbar .nav-container .mobile-menu {
+  margin: 0.5em 0 0 auto;
+}
+.navbar .nav-container .mobile-menu :hover {
+  cursor: pointer;
+}
+
+.hero {
+  margin: 1.5em;
+}
+.hero .container {
+  text-align: center;
+}
+.hero .container h1 {
+  font-size: 3em;
+  margin: 0;
+}
+.hero .container span p {
+  font-size: medium;
+  margin: 2em;
+}
+.hero .container .feature {
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hero .container {
+  margin: 0 0 3.5em 0;
+}
+.hero .hero-card {
+  border: 2px solid rgb(209, 207, 207);
+  text-align: left;
+}
+.hero .hero-card img {
+  width: 100%;
+}
+.hero .hero-card .featured-info-container {
+  margin: 2em;
+}
+.hero .hero-card .featured-info-container .time {
+  font-size: small;
+}
+.hero .hero-card .featured-info-container .group-info {
+  font-weight: 500;
+}
+.hero .hero-card .featured-info-container .group-info:hover p, .hero .hero-card .featured-info-container .group-info:hover h2 {
+  color: rgb(26, 134, 77);
+  cursor: pointer;
+}
+
+.break {
+  margin: 0;
+  width: 100vw;
+  border-bottom: 1px solid black;
+}
+
+.myblog {
+  margin: 3.5em 0;
+  text-align: center;
+}
+.myblog .container {
+  margin: 1.5em;
+}
+.myblog .container .primary-container {
+  border: 1px solid black;
+  margin: 2em 0;
+  text-align: left;
+}
+.myblog .container .primary-container img {
+  width: 100%;
+}
+.myblog .container .primary-container span {
+  font-size: small;
+}
+.myblog .container .secondary-container {
+  border: 1px solid black;
+  margin: 2em 0;
+  text-align: left;
+}
+.myblog .container .secondary-container img {
+  width: 100%;
+}
+.myblog .container .secondary-container span {
+  font-size: small;
+}
+.myblog .container .tertiary-container {
+  border: 1px solid black;
+  margin: 2em 0;
+  text-align: left;
+}
+.myblog .container .tertiary-container img {
+  width: 100%;
+}
+.myblog .container .tertiary-container span {
+  font-size: small;
+}
+.myblog .container article:hover h2, .myblog .container article:hover p {
+  color: rgb(26, 134, 77);
+  cursor: pointer;
+}
+.myblog .container article {
+  margin: 1.5em;
+}
+.myblog .container button {
+  font-size: medium;
+  background-color: rgb(26, 134, 77);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5em 2.5em;
+  margin: 1em 0;
+}
+.myblog .container button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.about .container {
+  margin: 3.5em 0;
+}
+.about .container .primary-container {
+  margin: 1.5em;
+}
+.about .container .primary-container article h2 {
+  font-size: medium;
+  font-weight: lighter;
+}
+.about .container .primary-container article p {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.about .container .primary-container button {
+  font-size: medium;
+  background-color: rgb(26, 134, 77);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5em 2.5em;
+  margin: 1em 0;
+}
+.about .container .primary-container button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.about .container .primary-container img {
+  margin: 1em 0;
+  width: 100%;
+  border: 1px solid black;
+}
+.about .container .secondary-container {
+  margin: 1.5em;
+}
+.about .container .secondary-container article h2 {
+  margin: 1em 0;
+}
+.about .container .secondary-container img {
+  width: 100%;
+  border: 1px solid black;
+}
+
+#contact {
+  background-image: url("../img/11062b_a05955ed1c70427da0c0da8b85a42836f000.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  margin: 0 1.5em;
+  padding: 3em 0;
+}
+.contact h1 {
+  text-align: center;
+  margin: 0 0 1em 0;
+}
+.contact .container {
+  background-color: white;
+  border: 1px solid black;
+  padding: 2em;
+}
+.contact .container label {
+  display: flex;
+}
+.contact .container input {
+  width: 100%;
+  padding: 1em;
+  margin: 1em 0;
+}
+.contact .container textarea {
+  width: 100%;
+  padding: 1em 1em 9em 1em;
+  margin: 1em 0;
+  resize: none;
+}
+.contact .container button {
+  border: none;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: medium;
+  border-radius: 25px;
+  height: 3em;
+}
+.contact .container button:hover {
+  cursor: pointer;
+  background-color: rgb(26, 134, 77);
+}
+
+footer {
+  margin: 1.5em;
+  font-size: small;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+}
+footer ul span {
+  text-decoration: underline;
+}
+footer .secondary-container ul img {
+  margin: 1.5em 0 0 0;
+  width: 2em;
+}
+footer .priv-container {
+  margin: 2em 0;
+  color: black;
+}
+footer .logo {
+  font-size: 3em;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

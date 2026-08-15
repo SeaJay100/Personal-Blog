@@ -1,5 +1,8 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body, html {
     margin: 0;
+    font-family: Poppins, sans-serif;
 }
 
 * {
@@ -7,9 +10,301 @@ body {
 }
 
 .navbar {
+    border-bottom: 1px solid black;
     .nav-container {
+        display: flex;
+        margin: .5em 1.5em .5em 1.5em;
+        .logo {
+            a{
+                font-size: 25px;
+                font-weight: bold;
+                text-decoration: none;
+                color: black;
+            }
+            
+        }
+
         nav {
             display: none;
         }
+        .mobile-menu {
+            margin: .5em 0 0 auto;
+            :hover {
+                cursor: pointer;
+            }
+        }
     }
+}
+
+.hero {
+    margin: 1.5em;
+    .container {
+        text-align: center;
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        span p {
+            font-size: medium;
+            margin: 2em;
+        }
+        .feature {
+            border: 1px solid black;
+            background-color: white;
+            display: flex;
+            width: fit-content;
+        }
+        margin: 0 0 3.5em 0;
+    }
+    .hero-card {
+        border: 2px solid rgb(209, 207, 207);
+        text-align: left;
+        img {
+            width: 100%;
+        }
+        .featured-info-container {
+            margin: 2em;
+           
+            .time {
+                font-size: small;
+            }
+            .group-info {
+                font-weight: 500;
+                &:hover {
+                    p, h2{
+                        color: rgba(26, 134, 77, 1);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.break {
+    margin: 0;
+    width: 100vw;
+    border-bottom: 1px solid black;
+}
+
+.myblog {
+    margin: 3.5em 0;
+    text-align: center;
+    .container {
+        margin: 1.5em;
+        .primary-container {
+            border: 1px solid black;
+            margin: 2em 0;
+            text-align: left;
+        img {
+            width: 100%;
+        }
+            span {
+                font-size: small;
+            }
+        }
+
+        .secondary-container {
+            border: 1px solid black;
+            margin: 2em 0;
+            text-align: left;
+
+        img {
+            width: 100%;
+        }
+            span {
+                font-size: small;
+            }
+        }
+
+        .tertiary-container {
+            border: 1px solid black;
+            margin: 2em 0;
+            text-align: left;
+
+        img {
+            width: 100%;
+        }
+            span {
+                font-size: small;
+            }
+        }
+
+        article {
+            &:hover {
+                h2,p {
+                    color: rgba(26, 134, 77, 1);
+                    cursor: pointer;
+                }
+            }
+            margin: 1.5em;
+        }
+
+        button {
+            font-size: medium;
+            background-color: rgba(26, 134, 77, 1);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: .5em 2.5em;
+            margin: 1em 0;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
+
+.about {
+    .container {
+        margin: 3.5em 0;
+        .primary-container {
+            margin: 1.5em;
+            article {
+                h2 {
+                    font-size: medium;
+                    font-weight: lighter;
+                }
+                p {
+                    font-size: 1.3em;
+                    font-weight: bold;
+                }
+            }
+            button {
+            font-size: medium;
+            background-color: rgba(26, 134, 77, 1);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: .5em 2.5em;
+            margin: 1em 0;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            }
+
+            img {
+                margin: 1em 0;
+                width: 100%;
+                border: 1px solid black;
+            }
+        }
+        .secondary-container {
+            margin: 1.5em;
+            article {
+                h2 {
+                    margin: 1em 0;
+                }
+            }
+
+            img {
+                width: 100%;
+                border: 1px solid black;
+            }
+        }
+    }
+}
+
+#contact {
+    background-image: url("../img/11062b_a05955ed1c70427da0c0da8b85a42836f000.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact {
+    margin: 0 1.5em;
+    padding: 3em 0;
+    h1 {
+        text-align: center;
+        margin: 0 0 1em 0;
+    }
+    .container {
+        background-color: white;
+        border: 1px solid black;
+        padding: 2em;
+        label {
+            display: flex;
+        }
+        input {
+            width: 100%;
+            padding: 1em;
+            margin: 1em 0;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 1em 1em 9em 1em;
+            margin: 1em 0;
+            resize: none;
+
+        }
+
+        button {
+            border: none;
+            width: 100%;
+            background-color: black;
+            color: white;
+            font-size: medium;
+            border-radius: 25px;
+            height: 3em;
+
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(26, 134, 77, 1);
+            }
+        }
+    }
+}
+
+footer {
+    margin: 1.5em;
+    font-size: small;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+
+        li {
+            a {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        span {
+            text-decoration: underline;
+        }
+    }
+
+    .secondary-container {
+        ul {
+            img {
+                margin: 1.5em 0 0 0;
+                width: 2em;
+            }
+        }
+    }
+
+    .priv-container {
+        margin: 2em 0;
+        color: black;
+    }
+
+    .logo {
+        font-size: 3em;
+        font-weight: bold;
+    }
+
 }
