@@ -21,15 +21,27 @@ body, html {
   text-decoration: none;
   color: black;
 }
-.navbar .nav-container nav ul {
+.navbar .nav-container nav .primary-nav {
   text-align: center;
   list-style-type: none;
 }
-.navbar .nav-container nav ul a {
+.navbar .nav-container nav .primary-nav a {
   text-decoration: none;
   color: black;
   display: block;
   text-align: center;
+}
+.navbar .nav-container nav .secondary-nav {
+  display: flex;
+  justify-content: center;
+}
+.navbar .nav-container nav .secondary-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .navbar .nav-container .mobile-menu {
   margin: 0.5em 0 0 auto;
@@ -347,14 +359,21 @@ nav .primary-nav li a.active {
 nav .secondary-nav {
   display: flex;
   justify-content: center;
-  gap: 20px;
   margin-top: 3em;
+}
+nav .secondary-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 nav .secondary-nav li a img {
   width: 20px;
 }
 
-@media only screen and (min-width: 820px), (min-height: 1180px) {
+@media only screen and (min-width: 820px) {
   .navbar {
     font-size: 1.5em;
   }
@@ -529,5 +548,128 @@ nav .secondary-nav li a img {
   footer {
     font-size: x-large;
     margin: 3em 2em;
+  }
+}
+@media only screen and (min-width: 1710px) {
+  .navbar .nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 11em;
+  }
+  .navbar .nav-container .logo {
+    margin: 0;
+  }
+  .navbar .nav-container nav {
+    display: flex;
+    align-items: center;
+    gap: 11.4em;
+    height: auto;
+    position: static;
+    width: auto;
+    background-color: transparent;
+    margin: 0;
+  }
+  .navbar .nav-container nav .collapse-menu {
+    display: none;
+  }
+  .navbar .nav-container nav .primary-nav {
+    border: none;
+    margin: 0;
+    width: auto;
+  }
+  .navbar .nav-container nav .primary-nav ul {
+    display: flex;
+    gap: 0;
+  }
+  .navbar .nav-container nav .primary-nav ul li {
+    border: none;
+  }
+  .navbar .nav-container nav .primary-nav ul li a {
+    padding: 0.5em 1em;
+  }
+  .navbar .nav-container nav .secondary-nav {
+    margin: 0;
+  }
+  .navbar .nav-container nav .secondary-nav ul {
+    display: flex;
+    gap: 15px;
+  }
+  .navbar .nav-container .mobile-menu {
+    display: none;
+  }
+  .hero .container {
+    margin: 0 15em 12em;
+  }
+  .about .container .primary-container {
+    margin: 5em;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 2em;
+    align-items: start;
+  }
+  .about .container .primary-container img {
+    grid-column: 1;
+    grid-row: 1/-1;
+    border: 1px solid black;
+    margin: 0;
+    width: 100%;
+  }
+  .about .container .primary-container article {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .about .container .primary-container article h2 {
+    font-size: 2em;
+  }
+  .about .container .primary-container article p {
+    font-size: 2.5em;
+  }
+  .about .container .primary-container button {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: -3.9em;
+  }
+  .about .container .primary-container br {
+    display: none;
+  }
+  .about .container .secondary-container {
+    margin: 5em;
+  }
+  .about .container .secondary-container article {
+    display: grid;
+    grid-template-columns: 1.2fr 420px;
+    gap: 2em;
+    align-items: center;
+  }
+  .about .container .secondary-container article h2 {
+    grid-column: 1;
+    font-size: 2.5em;
+    margin-top: -4.7em;
+  }
+  .about .container .secondary-container article img {
+    grid-column: 2;
+    width: 38em;
+    margin-top: 7em;
+    justify-self: end;
+    border: 1px solid black;
+    display: block;
+  }
+  .about .container .secondary-container article p {
+    grid-column: 1;
+    margin-right: 30em;
+    margin-top: -15em;
+  }
+  .about .container .secondary-container article span p {
+    margin-top: -22em;
+  }
+  .contact h1 {
+    font-size: 4em;
+  }
+  .contact .container {
+    margin: 4em 30em 3em;
   }
 }/*# sourceMappingURL=main.css.map */
