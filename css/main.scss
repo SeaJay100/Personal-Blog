@@ -453,7 +453,7 @@ nav {
             }
             .feature {
                position: absolute; 
-               top: 28em;
+               top: 30.5em;
                padding: 1em 4.5em .5em 1.5em;
 
                label {
@@ -510,6 +510,7 @@ nav {
                     p {
                         display: -webkit-box;
                         -webkit-line-clamp: 3;
+                        line-clamp: 3;
                         -webkit-box-orient: vertical;
                         overflow: hidden;
                         text-overflow: ellipsis;
@@ -525,6 +526,7 @@ nav {
                     p {
                         display: -webkit-box;
                         -webkit-line-clamp: 3;
+                        line-clamp: 3;
                         -webkit-box-orient: vertical;
                         overflow: hidden;
                         text-overflow: ellipsis;
@@ -540,6 +542,7 @@ nav {
                     p {
                         display: -webkit-box;
                         -webkit-line-clamp: 3;
+                        line-clamp: 3;
                         -webkit-box-orient: vertical;
                         overflow: hidden;
                         text-overflow: ellipsis;

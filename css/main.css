@@ -382,7 +382,7 @@ nav .secondary-nav li a img {
   }
   .hero .container .feature {
     position: absolute;
-    top: 28em;
+    top: 30.5em;
     padding: 1em 4.5em 0.5em 1.5em;
   }
   .hero .container .feature label {
@@ -429,6 +429,7 @@ nav .secondary-nav li a img {
   .myblog .container .primary-container article p {
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -440,6 +441,7 @@ nav .secondary-nav li a img {
   .myblog .container .secondary-container article p {
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -451,6 +453,7 @@ nav .secondary-nav li a img {
   .myblog .container .tertiary-container article p {
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
