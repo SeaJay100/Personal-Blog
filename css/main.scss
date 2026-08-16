@@ -51,18 +51,31 @@ body, html {
     .container {
         text-align: center;
         h1 {
-            font-size: 3em;
-            margin: 0;
+            font-size: 2.5em;
+            margin-top: 1em;
+            margin-bottom: 0;
         }
-        span p {
-            font-size: medium;
-            margin: 2em;
+        p {
+            font-size: 1,2em;
+            margin: 0 2em 3em 2em;
+            font-weight: lighter;
         }
+
+        span {
+            display: block;
+        }
+
         .feature {
             border: 1px solid black;
             background-color: white;
-            display: flex;
-            width: fit-content;
+            position: absolute;
+            padding: .3em 1em;
+            top: 14.5em;
+            label {
+                font-size: 1em;
+                font-weight: lighter;
+            }
+            
         }
         margin: 0 0 3.5em 0;
     }
@@ -77,9 +90,18 @@ body, html {
            
             .time {
                 font-size: small;
+                margin: -.5em;
+            }
+            span {
+                display: inline;
             }
             .group-info {
                 font-weight: 500;
+                margin: -.5em;
+                p {
+                    margin: 0;
+                }
+
                 &:hover {
                     p, h2{
                         color: rgba(26, 134, 77, 1);
@@ -149,8 +171,8 @@ body, html {
             }
             margin: 1.5em;
         }
-
-        button {
+    }
+    button {
             font-size: medium;
             background-color: rgba(26, 134, 77, 1);
             color: white;
@@ -164,8 +186,6 @@ body, html {
                 cursor: pointer;
             }
         }
-        
-    }
 }
 
 .about {
@@ -391,5 +411,225 @@ nav {
         li a img {
             width: 20px;
         }
+    }
+}
+
+@media only screen and (min-width: 820px), (min-height: 1180px) {
+    .navbar {
+        font-size: 1.5em;
+        .nav-container {
+            .logo {
+                a{
+                    font-size: 3em;
+                    margin-left: .5em;
+                }
+            }
+           .secondary-nav {
+                li a img {
+                    width: 2em;
+                }
+            }
+            
+
+            .mobile-menu {
+                width: 3em;
+                margin: 1em 2.5em 1em auto;
+                
+            }
+        }
+    }
+
+
+    .hero{
+        .container {
+            margin: 0 2em 15em 2em;
+            h1 {
+                font-size: 4.5em;
+                margin-top: 1em;
+            }
+            p {
+                margin-top: .5em;
+                font-size: 2em;
+            }
+            .feature {
+               position: absolute; 
+               top: 28em;
+               padding: 1em 4.5em .5em 1.5em;
+
+               label {
+                font-size: 1.5em;
+                font-weight: lighter;
+               }
+            }
+            .hero-card {
+                .featured-info-container {
+                    .time {
+                        font-size: smaller;
+                        margin-left: -.5em;
+                        span{
+                            display: inline;
+                        }
+                    }
+                    .group-info {
+                        h2 {
+                            font-size: large;
+                            font-weight: bold;
+                        }
+
+                        p {
+                            font-size: large;
+                            font-weight: lighter;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .myblog {
+        text-align: center;
+        h2 {
+            font-size: 3em;
+            margin-bottom: 1.5em;
+        }
+        .container {
+            margin: 3em;
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            flex: 1;
+            object-fit: cover;
+            flex-grow: 1;
+
+            .primary-container {
+                article {
+                    h2 {
+                        font-size: small;
+                        font-weight: lighter;
+                    }
+                    p {
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+            .secondary-container {
+                article {
+                    h2 {
+                        font-size: small;
+                        font-weight: lighter;
+                    }
+                    p {
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+            .tertiary-container {
+                article {
+                    h2 {
+                        font-size: small;
+                        font-weight: lighter;
+                    }
+                    p {
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+        button {
+            font-size: 2em;
+            font-weight: lighter;
+            padding-left: 2.5em;
+            padding-right: 2.5em;
+        }
+    }
+    .about {
+        .container {
+            .primary-container {
+                margin: 2.8em;
+                padding-top: 3em;
+                article {
+                    h2 {
+                        font-size: 1.8em;
+                        font-weight: lighter;
+                    }
+                    p {
+                        font-size: 2em;
+                        font-weight: 500;
+                    }
+                }
+                button {
+                    font-size: 1.8em;
+                }
+            }
+            .secondary-container {
+                margin: 2.8em;
+                article {
+                    padding-top: 1em;
+                    font-size: 1.5em;
+                    h2 {
+                        font-size: 3em;
+                        font-weight: 600;
+                    }
+                    span {
+                        display: block;
+                    }
+                    p{
+                        margin-right: 2em;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        h1 {
+            font-size: 3em;
+            span {
+                display: block;
+            }
+        }
+        .container {
+            margin-left: 2em;
+            margin-right: 2em;
+            margin-bottom: 30em;
+            
+            .fillout-form-container {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                
+                .user {
+                    display: flex;
+                    gap: 25px;
+                    span {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+                button {
+                    margin-left: auto;
+                    height: 2.6em;
+                    width: 14em;
+
+                }
+            }
+        }
+    }
+    footer{
+        font-size: x-large;
+        margin: 3em 2em;
     }
 }
